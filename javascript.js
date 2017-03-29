@@ -1,7 +1,7 @@
-var datos = {
+function datos (tituloSeccion, puntosTitulo, puntosSeccion){
   tituloSeccion : document.getElementById("nuevaLista");
-  puntosTitulo  : document.getElementById("titulo");
-  puntosSeccion : document.getElementById("listaCreada");
+  puntosTitulo  : document.getElementById("nombreTitulo");
+  puntosSeccion : document.getElementById("lista");
 };
 
 function agregarSeccion(){
