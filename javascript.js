@@ -1,20 +1,30 @@
-function agregarLista(){
-  //var numeroElementos = prompt("");
-  var nuevaLista = document.createElement("h3");
-  var elementosLista = document.getElementById("nombreTitulo").value;
-  var elemento = document.createTextNode(elementosLista);
+function clonar(){
+  //var nuevaFila = document.createElement("tr");
+  var nuevaFila = document.getElementById("organizador").rows[0];
+  var agregada = nuevaFila.insertCell(1);
+  agregada.innerHTML = "Nueva Lista";
+  //var elemento = document.createTextNode(elementosLista);
 
-  nuevaLista.appendChild(elemento);
-  document.getElementById("titulo").appendChild(nuevaLista)
+  //nuevaFila.appendChild(elemento);
+  //document.getElementById("titulo").appendChild(nuevaFila)
 };
 
+  function agregarTitulo(){
+    //var numeroElementos = prompt("");
+    var nuevaLista = document.createElement("h3");
+    var elementosLista = document.getElementById("nombreTitulo").value;
+    var elemento = document.createTextNode(elementosLista);
 
-function agregarElementos(){
-  //var numeroElementos = prompt("");
-  var nuevaLista = document.createElement("li");
-  var elementosLista = document.getElementById("lista").value;
-  var elemento = document.createTextNode(elementosLista);
+    nuevaLista.appendChild(elemento);
+    document.getElementById("titulo").appendChild(nuevaLista)
+  };
 
-  nuevaLista.appendChild(elemento);
-  document.getElementById("listaCreada").appendChild(nuevaLista)
-};
+  function agregarElementos(){
+    //var numeroElementos = prompt("");
+    var nuevaLista = document.createElement("li");
+    var elementosLista = document.getElementById("lista").value;
+    var elemento = document.createTextNode(elementosLista);
+
+    nuevaLista.appendChild(elemento);
+    document.getElementById("listaCreada").appendChild(nuevaLista)
+  };

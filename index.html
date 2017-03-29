@@ -4,22 +4,27 @@
     <meta charset="utf-8">
     <script src="javascript.js"></script>
     <title></title>
-  </head>
-  <body>
-    <h1>Proyecto2 - Sprint2</h1>
-    <hr>
-      <input id="nombreTitulo"></input><br>
-      <button onclick="agregarLista()">Titulo</button>
-    <table>
-      <tr>
-        <td><section id="titulo"></section></td>
-      </tr>
-      <tr>
-        <td><section id="listaCreada"></section></td>
-      </tr>
-    </table>
-    <input id="lista"></input><br>
-    <button onclick="agregarElementos()">agregarLista</button>
-  </body>
+</head>
+<body align="center">
+  <h1>Proyecto2 - Sprint2</h1>
+  <hr>
+    <button id="mostrar" onclick="clonar()">Agregar una nueva lista</button>
+    <button id="mostrar" onclick="">Borrar lista</button><br>
+    <input id="nombreTitulo"></input>
+    <button onclick="agregarTitulo()">Titulo</button><br>
+    <input id="lista"></input>
+    <button onclick="agregarElementos()">Elementos</button><br>
+
+  <table id="organizador" style="width:100%">
+    <tr>
+      <td><section id="nuevaLista">Nueva Lista</section></td>
+    </tr>
+    <tr>
+      <td><section id="titulo"></section></td>
+    </tr>
+    <tr>
+      <td><section id="listaCreada"></section></td>
+    </tr>
+  </table>
 </body>
 </html>
