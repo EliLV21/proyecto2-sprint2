@@ -8,23 +8,17 @@
 <body align="center">
   <h1>Proyecto2 - Sprint2</h1>
   <hr>
-    <button id="mostrar" onclick="clonar()">Agregar una nueva lista</button>
+    <button id="mostrar" onclick="agregarSeccion()">Agregar una nueva lista</button>
     <button id="mostrar" onclick="">Borrar lista</button><br>
     <input id="nombreTitulo"></input>
     <button onclick="agregarTitulo()">Titulo</button><br>
     <input id="lista"></input>
     <button onclick="agregarElementos()">Elementos</button><br>
 
-  <table id="organizador" style="width:100%">
-    <tr>
-      <td><section id="nuevaLista">Nueva Lista</section></td>
-    </tr>
-    <tr>
-      <td><section id="titulo"></section></td>
-    </tr>
-    <tr>
-      <td><section id="listaCreada"></section></td>
-    </tr>
-  </table>
+  <section id="organizador">
+    <p id="nuevaLista">Nueva Lista</p>
+    <p id="titulo"></p>
+    <p id="listaCreada"></p>
+  </section>
 </body>
 </html>
